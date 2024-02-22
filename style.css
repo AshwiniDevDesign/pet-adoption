@@ -8,6 +8,10 @@ body {
   font-family: "Source Sans 3", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .top-section-wrapper {
   background-color: #001d37;
   overflow: hidden;
@@ -33,19 +37,20 @@ body {
 }
 
 .hero-text {
-  margin-top: 32px;
+  margin-top: 28px;
+  margin-bottom: 48px;
   width: 320px;
 }
+
 .btn1 {
-  margin-top: 48px;
+  margin-right: 32px;
   padding: 16px 20px;
   font-weight: 600;
   background-color: #475aff;
   border: 1px solid #475aff;
   color: #fff;
-  cursor: pointer;
   border-radius: 16px;
-  margin-right: 24px;
+
   transition: background-color 0.5s ease-out border 0.5s ease-out color 0.3s
     ease-out;
 }
@@ -61,6 +66,7 @@ body {
   transition: background-color 0.5s ease-out border 0.5s ease-out color 0.3s
     ease-out;
 }
+
 .btn1:hover {
   background-color: #2e40e2;
   border: 1px solid #2e40e2;
@@ -111,10 +117,10 @@ body {
 
 .page-section {
   background-color: #fff;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   max-width: 1066px;
-  margin: 48px;
+  margin: 32px;
 }
 
 .page-section-inner {
@@ -149,21 +155,19 @@ body {
 
 .list-of-pets {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .pet-card {
   overflow: hidden;
   display: flex;
-
   margin-top: 16px;
   flex-direction: row-reverse;
+
   border: 1px solid #f3f3f3;
   border-radius: 20px;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
-  width: 50%;
 }
 .pet-card-image img {
   width: 100%;
@@ -195,7 +199,7 @@ h3 {
     padding-bottom: 139px;
   }
   .feature-list {
-    margin-top: 48px;
+    margin-top: 96px;
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -225,7 +229,7 @@ h3 {
 @media screen and (min-width: 1024px) {
   .list-of-pets {
     display: flex;
-    flex-direction: row;
+
     flex-wrap: wrap;
   }
   .site-footer p {
@@ -235,15 +239,15 @@ h3 {
     margin: 0;
     padding-bottom: 16px;
   }
+
   .pet-card {
-    overflow: hidden;
     display: flex;
     margin-top: 16px;
     flex-direction: row-reverse;
     border: 1px solid #f3f3f3;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
-    width: 50%;
+    max-width: 50%;
   }
   .pet-card-image img {
     width: 100%;
