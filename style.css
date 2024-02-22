@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.top-section-wrapper {
+  background-color: #001d37;
+  overflow: hidden;
+}
+.top-section {
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 1066px;
+  position: relative;
+  margin: 48px;
+}
+
+.foreground {
+  z-index: 5;
+  position: relative;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 60px;
+  width: 480px;
+  line-height: 80px;
+}
+
+.hero-text {
+  margin-top: 32px;
+  width: 320px;
+}
+.btn1 {
+  margin-top: 48px;
+  padding: 16px 20px;
+  font-weight: 600;
+  background-color: #475aff;
+  border: 1px solid #475aff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 16px;
+  margin-right: 24px;
+  transition: background-color 0.5s ease-out border 0.5s ease-out color 0.3s
+    ease-out;
+}
+.btn2 {
+  margin-top: 48px;
+  padding: 16px 20px;
+  font-weight: 600;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 16px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background-color 0.5s ease-out border 0.5s ease-out color 0.3s
+    ease-out;
+}
+.btn1:hover {
+  background-color: #2e40e2;
+  border: 1px solid #2e40e2;
+}
+.btn2:hover {
+  background-color: #fff;
+  color: #475aff;
+}
+.feature-list {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.f-list {
+  color: #fff;
+  padding: 24px 8px;
+  border: 1px solid white;
+}
+.f-list h2 {
+  margin: 12px 0 4px 0;
+  font-weight: 800;
+}
+.circle1 {
+  width: 617px;
+  height: 617px;
+  background: #d660ff;
+  opacity: 0.85;
+  border-radius: 50%;
+  filter: blur(150px);
+  position: absolute;
+  top: 62px;
+  right: -390px;
+}
+
+.circle2 {
+  width: 617px;
+  height: 617px;
+  background: #6079ff;
+  opacity: 0.85;
+  border-radius: 50%;
+  filter: blur(150px);
+  position: absolute;
+  top: -365px;
+  left: -123px;
+}
+
+.page-section {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 1066px;
+  margin: 48px;
+}
+
+.page-section-inner {
+  max-width: 1066px;
+}
+
+.page-section-title {
+  font-size: 24px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.pet-filter {
+  color: #9f9f9f;
+  font-size: 12px;
+  margin: 8px 0;
+}
+.pet-filter button {
+  background-color: transparent;
+  border: none;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 12px;
+  color: #9f9f9f;
+  margin-left: 32px;
+}
+.site-footer p {
+  text-align: center;
+  color: #a6a6a6;
+  font-size: 8px;
+  margin-top: 16px;
+  padding-bottom: 16px;
+}
+
+.list-of-pets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pet-card {
+  overflow: hidden;
+  display: flex;
+
+  margin-top: 16px;
+  flex-direction: row-reverse;
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
+  width: 50%;
+}
+.pet-card-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  background-size: contain;
+}
+
+.pet-card-description {
+  color: #626262;
+  margin: 16px;
+}
+h3 {
+  font-weight: 700;
+  margin: 16px;
+}
+.pet-card-age {
+  color: #a2a2a2;
+  margin: 16px;
+}
+
+@media screen and (min-width: 676px) {
+  .hero-title {
+    font-size: 80px;
+  }
+  .top-section {
+    padding-top: 139px;
+    padding-bottom: 139px;
+  }
+  .feature-list {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .f-list {
+    color: #fff;
+    padding: 36px 16px;
+    border: 1px solid white;
+  }
+  .f-list h2 {
+    margin: 16px 0 8px 0;
+    font-weight: 800;
+  }
+  .page-section {
+    padding: 96px 16px;
+  }
+  .page-section-title {
+    font-size: 60px;
+  }
+  .pet-filter {
+    font-size: 24px;
+  }
+  .pet-filter button {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .list-of-pets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .site-footer p {
+    text-align: center;
+    color: #a6a6a6;
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 16px;
+  }
+  .pet-card {
+    overflow: hidden;
+    display: flex;
+    margin-top: 16px;
+    flex-direction: row-reverse;
+    border: 1px solid #f3f3f3;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
+    width: 50%;
+  }
+  .pet-card-image img {
+    width: 100%;
+    display: block;
+  }
+}
