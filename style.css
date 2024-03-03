@@ -157,6 +157,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 24px;
 }
 
 .pet-card {
@@ -168,6 +169,7 @@ html {
   border: 1px solid #f3f3f3;
   border-radius: 20px;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
+  flex: 40%;
 }
 .pet-card-image img {
   width: 100%;
@@ -190,7 +192,7 @@ h3 {
   margin: 16px;
 }
 
-@media screen and (min-width: 676px) {
+@media screen and (max-width: 676px) {
   .hero-title {
     font-size: 80px;
   }
@@ -226,7 +228,7 @@ h3 {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .list-of-pets {
     display: flex;
 
@@ -247,7 +249,8 @@ h3 {
     border: 1px solid #f3f3f3;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
-    max-width: 50%;
+    max-width: 100%;
+    flex: 100%;
   }
   .pet-card-image img {
     width: 100%;
