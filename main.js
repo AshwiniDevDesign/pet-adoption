@@ -23,6 +23,7 @@ async function petsArea() {
     clone.querySelector(".pet-card-age").textContent = createAgeText(
       pet.birthYear
     );
+    if (!pet.photo) pet.photo = "img/fallback.jpg";
     clone.querySelector(".pet-card-image img").src = pet.photo;
     clone.querySelector(
       ".pet-card-image img"
