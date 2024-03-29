@@ -128,20 +128,20 @@ html {
 }
 
 .page-section-title {
-  font-size: 24px;
+  font-size: 48px;
   margin-bottom: 0;
   line-height: 1;
 }
 .pet-filter {
   color: #9f9f9f;
-  font-size: 12px;
+  font-size: 24px;
   margin: 8px 0;
 }
 .pet-filter button {
   background-color: transparent;
   border: none;
   font-family: "Source Sans 3", sans-serif;
-  font-size: 12px;
+  font-size: 24px;
   color: #9f9f9f;
   margin-left: 32px;
 }
@@ -219,13 +219,13 @@ h3 {
     padding: 96px 16px;
   }
   .page-section-title {
-    font-size: 60px;
+    font-size: 32px;
   }
   .pet-filter {
-    font-size: 24px;
+    font-size: 16px;
   }
   .pet-filter button {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 1024px) {
