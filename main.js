@@ -20,14 +20,12 @@ async function petsArea() {
     const clone = template.content.cloneNode(true);
     clone.querySelector(".pet-card").dataset.species = pet.species;
     clone.querySelector("h3").textContent = pet.name;
-    clone.querySelector(".pet-card-description").textContent = pet.description;
-    clone.querySelector(".pet-card-age").textContent = createAgeText(
-      pet.birthYear
-    );
-    if (!pet.photo) pet.photo = "img/fallback.jpg";
-    clone.querySelector(".pet-card-image img").src = pet.photo;
+    clone.querySelector(".pet-description").textContent = pet.description;
+    clone.querySelector(".pet-age").textContent = createAgeText(pet.birthYear);
+    if (!pet.photo) pet.photo = "img/fallback1.jpg";
+    clone.querySelector(".pet-card-photo img").src = pet.photo;
     clone.querySelector(
-      ".pet-card-image img"
+      ".pet-card-photo img"
     ).alt = `A ${pet.species}  named ${pet.name}`;
     wrapper.appendChild(clone);
   });
@@ -42,7 +40,7 @@ function createAgeText(birthYear) {
   if (age == 1) return "1 year old";
   if (age == 0) return "less than a year old";
 
-  return `${age}years old`;
+  return `${age} years old`;
 }
 //pet filter button code
 const allButtons = document.querySelectorAll(".pet-filter button");
@@ -61,7 +59,7 @@ function handleButtonClick(e) {
   const currentFilter = e.target.dataset.filter;
   document.querySelectorAll(".pet-card").forEach((el) => {
     if (currentFilter == el.dataset.species || currentFilter == "all") {
-      el.style.display = "grid";
+      el.style.display = "flex";
     } else {
       el.style.display = "none";
     }
