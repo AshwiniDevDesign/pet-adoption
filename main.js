@@ -13,7 +13,7 @@ start();
 
 async function petsArea() {
   const petsPromise = await fetch(
-    "https://learnwebcode.github.io/bootcamp-pet-data/pets.json"
+    "https://relaxed-phoenix-2ac5e4.netlify.app/.netlify/functions/pets"
   );
   const petsData = await petsPromise.json();
   petsData.forEach((pet) => {
